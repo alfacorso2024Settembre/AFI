@@ -3,10 +3,12 @@ package it.alfasoft.corso.negozio;
 public class Prodotto_cliente {
     int id_cliente;
     int id_prodotto;
+    int quantita;
 
-    public Prodotto_cliente(int id_cliente, int id_prodotto) {
+    public Prodotto_cliente(int id_cliente, int id_prodotto,int quantita) {
         this.id_cliente = id_cliente;
         this.id_prodotto = id_prodotto;
+        this.quantita = quantita;
     }
 
     public int getId_cliente() {
@@ -23,5 +25,9 @@ public class Prodotto_cliente {
 
     public void setId_prodotto(int id_prodotto) {
         this.id_prodotto = id_prodotto;
+    }
+
+    public int getQuantita() {
+        return quantita;
     }
 }
