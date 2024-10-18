@@ -12,6 +12,7 @@ public class DTOreparto {
     }
 
     public DTOreparto() {
+        this.nome = GestioneAzienda.sc.nextLine();
     }
 
     public String getNome() {

@@ -13,6 +13,17 @@ public class DTOdipendente {
         this.nomeReparto = nomeReparto;
     }
 
+    public DTOdipendente() {
+        System.out.println("Inserire nome del dipendente");
+        this.nome = GestioneAzienda.sc.nextLine();
+        System.out.println("Inserire l'email del dipendente");
+        this.email = GestioneAzienda.sc.nextLine();
+        System.out.println("Inserire ruolo del dipendente");
+        this.ruolo = GestioneAzienda.sc.nextLine();
+        System.out.println("Inserire il nome del reparto a cui è assegnato");
+        this.nomeReparto = GestioneAzienda.sc.nextLine();
+    }
+
     public String getNome() {
         return nome;
     }
